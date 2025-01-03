@@ -40,11 +40,14 @@ def update_cloudflare_access_policy(ip_address):
             client = Cloudflare(
                 api_token=API_TOKEN
             )
-        else:
+        elif API_KEY and EMAIL:
             client = Cloudflare(
                 api_key= API_KEY,
                 api_email= EMAIL
             )    
+        else:
+            print("Please provide an API Token or API Key and Email")
+            return
 
         print(f"Cloudflare Client: {client.api_email}")
 
