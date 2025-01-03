@@ -68,7 +68,7 @@ def update_cloudflare_access_policy(ip_address):
         print(f"Policy (Current): {policy.name} ip: {policy.include[0].ip}")
 
         # Update the policy if the IP address has changed
-        ip_address = '10.147.18.25' # Set to a different IP to test the update
+        # ip_address = '10.147.18.25' # Set to a different IP to test the update
 
         if policy.include[0].ip == f"{ip_address}/32":
             print("IP address has not changed. Exiting...")
