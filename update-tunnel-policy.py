@@ -5,6 +5,15 @@
 # It assumes that the policy uses a simple IP range rule.
 # Modify the script as needed to match your policy configuration.
 #
+# ##################### ATTENTION ####################
+#
+# Script is not working. the Method "client.zero_trust.access.policies.update" throws an unexpected error:
+""" 
+    Another non-200-range status code was received:404 <Response [404 Not Found]>
+Error code: 404 - {'result': None, 'success': False, 'errors': [{'code': 12135, 'message': 'access.api.error.not_found'}], 'messages': []}
+
+"""
+
 import os
 import time
 import requests
