@@ -18,7 +18,7 @@ For better control and security use API-Tokens with just enough rights to modify
 - `CF_API_TOKEN='Your API Token'`
 
 Specify the Policy to change
-- `CF_ACCOUNT_ID='Your Account IF'`
+- `CF_ACCOUNT_ID='Your Account ID'`
 - `CF_POLICY_ID='Your Policy ID'`
 
 The Script will log on to Cloudflare, fetch the current public IP Address, then update the specified tunnel. 
